@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Brothers | Premium Detailing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/logo_shine_brothers.png">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="tel:+306946953830" class="call-btn">
+                    <i class="fas fa-phone-alt"></i> <span>ΚΑΛΕΣΤΕ ΜΑΣ</span>
+                </a>
+            </div>
+            <div class="header-center">
+                <img src="images/logo_shine_brothers.png" alt="Logo" class="main-logo">
+                <canvas id="canvas3d"></canvas>
+            </div>
+            <div class="header-right">
+                <a href="https://www.tiktok.com/@shine_brothers24" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://instagram.com/shinebrothers__" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1 class="reveal">SHINE <span class="highlight-red">BROTHERS</span></h1>
+                <p class="reveal">Experience the Ultimate Shine & Protection</p>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="container">
+                <h2 class="reveal">Οι Υπηρεσίες μας</h2>
+                <div class="services-grid">
+                    
+                    <div class="service-card reveal" onclick="openService('headlights')">
+                        <img src="images/headlights.jpg" alt="Γυάλισμα Φαναριών" class="service-card-img">
+                        <i class="fas fa-magic"></i>
+                        <h3>Ξεθάμπωμα / Γυάλισμα Φαναριών</h3>
+                        <p>Επαναφορά διαύγειας και μέγιστης φωτεινότητας.</p>
+                        <span class="price">Από 40€</span>
+                    </div>
+
+                    <div class="service-card reveal" onclick="openService('full')">
+                        <img src="images/plysimo-mesa-exw.jpg" alt="Εσωτερικό & Εξωτερικό" class="service-card-img">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <h3>Εσωτερικό & Εξωτερικό</h3>
+                        <p>Πλήρης φροντίδα μέσα και έξω.</p>
+                        <span class="price">Από 20€</span>
+                    </div>
+
+                    <div class="service-card reveal" onclick="openService('bio')">
+                        <img src="images/viologikos.jpg" alt="Βιολογικός Καθαρισμός" class="service-card-img">
+                        <i class="fas fa-bacteria"></i>
+                        <h3>Βιολογικός Καθαρισμός</h3>
+                        <p>Απολύμανση και βαθύς καθαρισμός σαλονιού.</p>
+                        <span class="price">Από 130€</span>
+                    </div>
+
+                    <div class="service-card reveal" onclick="openService('ceramic')">
+                        <img src="images/gialisma.JPG" alt="Διόρθωση / Γυάλισμα Χρώματος" class="service-card-img">
+                        <i class="fas fa-gem"></i>
+                        <h3>Διόρθωση / Γυάλισμα Χρώματος</h3>
+                        <p>Επαναφορά λάμψης και αφαίρεση ατελειών.</p>
+                        <span class="price">Κατόπιν Ελέγχου</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="extras">
+            <div class="container">
+                <h2 class="reveal">Specialties</h2>
+                <div class="extras-flex">
+                    <div class="extra-item reveal" onclick="openService('tints')">
+                        <img src="images/fime.png" alt="Αντιηλιακές Μεμβράνες" class="service-card-img">
+                        <i class="fas fa-tint"></i>
+                        <h4>Αντιηλιακές Μεμβράνες</h4>
+                    </div>
+                    <div class="extra-item reveal" onclick="openService('led')">
+                        <img src="images/led.jpeg" alt="Αναβάθμιση LED" class="service-card-img">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Αναβάθμιση LED</h4>
+                    </div>
+                    <div class="extra-item reveal" onclick="openService('nanoceramic')">
+                        <img src="images/keramiki.JPG" alt="Νανοκεραμική Προστασία Οχήματος" class="service-card-img">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Νανοκεραμική Προστασία Οχήματος</h4>
+                    </div>
+                </div>
+                
+                <button class="reveal contact-btn-modern" onclick="openContactModal()">
+                    <i class="fas fa-calendar-check"></i> ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                </button>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-split reveal">
+                    <div class="about-left">
+                        <h2>Η ΙΣΤΟΡΙΑ ΜΑΣ</h2>
+                    </div>
+                    <div class="about-right">
+                        <p>Στο <strong>Shine Brothers</strong>, το αυτοκίνητο δεν είναι απλά ένα μέσο μετακίνησης, αλλά πάθος. Με πολυετή εμπειρία στο premium detailing, προσφέρουμε υπηρεσίες που αναδεικνύουν την ομορφιά και προστατεύουν την αξία του οχήματός σας.</p>
+                        <p>Χρησιμοποιούμε μόνο τα κορυφαία προϊόντα της αγοράς και δίνουμε έμφαση στη λεπτομέρεια που κάνει τη διαφορά. Η αφοσίωσή μας στην ποιότητα εξασφαλίζει ότι κάθε όχημα που φεύγει από εμάς φέρει τη σφραγίδα της τελειότητας.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeService()">×</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content contact-selector">
+            <span class="close-modal" onclick="closeContactModal()">×</span>
+            <h3>Κλείστε Ραντεβού</h3>
+            <p style="text-align: center; color: #ccc; margin-bottom: 25px;">Επιλέξτε τον τρόπο επικοινωνίας που προτιμάτε:</p>
+            
+            <div class="contact-options-grid">
+                <a href="https://ig.me/m/shinebrothers__" target="_blank" class="opt-link">
+                    <i class="fab fa-instagram"></i> Instagram Message
+                </a>
+                <a href="mailto:shinebrothers24@gmail.com" class="opt-link">
+                    <i class="fas fa-envelope"></i> Αποστολή Email
+                </a>
+                <a href="tel:+306946953830" class="opt-link">
+                    <i class="fas fa-phone-alt"></i> Τηλεφωνική Κλήση
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SHINE BROTHERS</h3>
+                <p><i class="fas fa-user"></i> Δημήτρης & Χριστόφορος Χριστοφάκης</p>
+                <p>
+                    <a href="tel:+306946953830" style="color: #ccc; text-decoration: none;">
+                        <i class="fas fa-phone"></i> 694 695 3830
+                    </a>
+                </p>
+                <p>
+                    <a href="https://maps.app.goo.gl/2GTmUYkY3hwFupD7A" target="_blank" style="color: #ccc; text-decoration: none;">
+                        <i class="fas fa-map-marker-alt"></i> Shine Brothers, Αρκαλοχώρι 703 00
+                    </a>
+                </p>
+                
+                <div class="footer-map" style="margin-top: 20px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.2465701213587!2d25.269439875226134!3d35.14817395907314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149af526e20e70af%3A0x695ca4aedd19c2c9!2sShine%20Brothers!5e1!3m2!1sel!2sgr!4v1776345775713!5m2!1sel!2sgr" 
+                        width="100%" height="180" style="border:0; border-radius: 12px; filter: grayscale(100%) invert(90%) contrast(90%);" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Shine Brothers Detailing | Made by <a href="https://www.instagram.com/_.giannisxrk._" target="_blank" style="color: #e31e24; text-decoration: none; font-weight: bold;">Chronjohn</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
